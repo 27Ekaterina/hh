@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Исходные данные для поиска</h1>
+    <form action="resulthh.html">
+        <input type="text" name="vacancie" value="" placeholder="ключевые слова для поиска">
+        <br>
+        <p><select name="where">
+            <option value="all">Везде</option>
+            <option value="name">В названии вакансии</option>
+            <option selected value="description">В описании вакансии</option>
+            <option value="company">В названии компании</option>
+        </select></p>
+        <br>
+        <h3>
+        Название региона
+        </h3>
+        <p><select name="where">
+            <option value="all">Везде</option>
+            <option value="Moscow">Москва</option>
+            <option selected value="SPB">Санкт-Петербург</option>
+            <option value="Ekaterinburg">Екатеринбург</option>
+        </select></p>
+        <input type="submit" value="Искать вакансии">
+    </form>
+    <hr>
+        <p class="security">
+        Все права защищены
+    </p>
+    <hr>
+    <a href="index.html">На главную</a>
+
+</body>
+</html>

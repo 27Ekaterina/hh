@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GAYD</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#FormSearch">Форма поиска</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resulthh">Результат поиска</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Аналитика по вакансиям с сайта HeadHunter</div>
+                <div class="masthead-heading text-uppercase">HHParser</div>
+                <p>
+                    Парсер получает информацию о вакансиях с HH
+                    <br>
+                    и выводит аналитику требований работодателей к соискателям.
+                </p>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#FormSearch">Начать поиск</a>
+            </div>
+        </header>
+
+        <!-- FormSearch-->
+        <section class="page-section" id="FormSearch">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Форма поиска</h2>
+                    <h3 class="section-subheading text-muted">Задайте параметры для поиска вакансий</h3>
+                </div>
+                <form action="#resulthh">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                                <br>
+                                <br>
+                                    <input class="form-control" type="text" name="vacancie" value="" placeholder="ключевые слова для поиска">
+                                <br>
+                                <p><select class="form-control" name="where">
+                                    <option value="all">Везде</option>
+                                    <option value="name">В названии вакансии</option>
+                                    <option selected value="description">В описании вакансии</option>
+                                    <option value="company">В названии компании</option>
+                                </select></p>
+                                <br>
+                        </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                            <br>
+                            <br>
+                                <input class="form-control" type="text" name="area" value="Название региона"
+                                <br>
+                                <br>
+                                <p><select class="form-control" name="where">
+                                    <option value="all">Везде</option>
+                                    <option value="Moscow">Москва</option>
+                                    <option selected value="SPB">Санкт-Петербург</option>
+                                    <option value="Ekaterinburg">Екатеринбург</option>
+                                </select></p>
+                                </div>
+                        <div class="col-md-4">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <br>
+                            <br>
+                            <input class="btn btn-dark" type="submit" value="Искать вакансии">
+                </form>
+        </section>
+        <div class="text-center">
+        <a href="index.html">На главную</a>
+        <div>
+
+        <!-- resulthh-->
+        <section class="page-section" id="resulthh">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Результат анализа вакансий с сайта HH</h2>
+                    <h3 class="section-subheading text-muted">Это тебе по зубам!</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <br>
+                                <h4>Параметры поиска</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    <ol class="col-sm-7">
+                                        <li>python developer</li>
+                                        <li>в названии вакансии</li>
+                                        <li>Регион Москва</li>
+                                    </ol>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Список требований к соискателям</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                <ul>
+                                    <li>python</li>
+                                    <li>sql</li>
+                                    <li>git</li>
+                                    <li>PostgreSQL</li>
+                                </ul>
+                                </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Частота требования к соискателю в процентах</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th>Номер</th>
+                                            <th>Требования к соискателям</th>
+                                            <th>%</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Python</td>
+                                            <td>14.5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>SQL</td>
+                                            <td>6.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Git</td>
+                                            <td>5.5</td>
+                                        </tr>
+                                         <tr>
+                                            <td>4</td>
+                                            <td>PostgreSQL</td>
+                                            <td>5.1</td>
+                                        </tr>
+                                    </table>
+
+                                </p></div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Я
+                                <br />
+                                в тебя
+                                <br />
+                                верю!
+                            </h4>
+
+                        </div>
+                    </li>
+                </ul>
+        </section>
+        <div class="row text-center">
+            <a href="index.html">На главную</a>
+        </div>
+
+
+
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Все права защищены</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
